@@ -70,8 +70,7 @@ class MainActivity : ComponentActivity() {
                   override val changelog = buildChangeLog {
                     //                    feature("Add unique Activities to turn the hotspot On or
                     // Off.")
-                    change("Apply the wakelocks closer to the proxy launch point")
-                    bugfix("Split up the CPU and Screen wakelocks")
+                    change("Rename the application to TetherFuseNet")
                   }
                 },
         )
