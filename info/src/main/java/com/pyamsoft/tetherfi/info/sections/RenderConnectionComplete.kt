@@ -38,6 +38,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.pyamsoft.pydroid.theme.keylines
 import com.pyamsoft.pydroid.ui.uri.rememberUriHandler
+import com.pyamsoft.tetherfi.core.GITHUB_URL
 import com.pyamsoft.tetherfi.info.R
 import com.pyamsoft.tetherfi.ui.dialog.SlowSpeedsUpsell
 
@@ -157,7 +158,7 @@ private fun FullConnectionInstructions(
               addLink(
                   url =
                       LinkAnnotation.Url(
-                          url = "https://github.com/pyamsoft/tetherfi/wiki/Setup-A-Proxy",
+                          url = "${GITHUB_URL}/wiki/Setup-A-Proxy",
                           linkInteractionListener = { handleLinkClicked(it) },
                       ),
                   start = linkIndex,

@@ -66,7 +66,7 @@ fun QRCodeScreen(
   val (qrCodeSize, setQrCodeSize) = remember { mutableStateOf(Dp.Unspecified) }
 
   // QR Code needs a "quiet zone" in dark mode
-  // https://github.com/pyamsoft/tetherfi/issues/251
+  // https://github.com/pyamsoft/tetherfusenet/issues/251
   val (quietZoneSize, setQuietZoneSize) = remember { mutableStateOf(Dp.Unspecified) }
 
   LazyColumn(
@@ -97,7 +97,7 @@ fun QRCodeScreen(
                     setQrCodeSize(width)
 
                     // QR Code needs a "quiet zone" in dark mode
-                    // https://github.com/pyamsoft/tetherfi/issues/251
+                    // https://github.com/pyamsoft/tetherfusenet/issues/251
                     if (w > 0) {
                       val qz = (1.0F / w.toFloat() * 8).toInt()
                       val quietZoneDp = density.run { qz.toDp() }
@@ -111,7 +111,7 @@ fun QRCodeScreen(
               contentAlignment = Alignment.Center,
           ) {
             // QR Code needs a "quiet zone" in dark mode
-            // https://github.com/pyamsoft/tetherfi/issues/251
+            // https://github.com/pyamsoft/tetherfusenet/issues/251
 
             // padding modifier can't handle unspecified
             val quietPadding =

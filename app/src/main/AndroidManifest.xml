@@ -23,13 +23,13 @@
   <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
 
   <application
-    android:name=".TetherFi"
+    android:name=".TFApp"
     android:allowBackup="true"
     android:icon="@mipmap/ic_launcher"
     android:label="@string/app_name"
     android:roundIcon="@mipmap/ic_launcher"
     android:supportsRtl="true"
-    android:theme="@style/Theme.TetherFi"
+    android:theme="@style/Theme.TFApp"
     android:usesCleartextTraffic="true"
   >
     <!--
@@ -81,7 +81,7 @@
     <!--
               Must run as a ConnectedDevice ForegroundService
 
-              https://github.com/pyamsoft/tetherfi/issues/250
+              https://github.com/pyamsoft/tetherfusenet/issues/250
             -->
     <service
       android:name=".foreground.ProxyForegroundService"
@@ -110,7 +110,7 @@
                     starting We mark this as NOT active so that the system binds to us and treats
                     us as foreground!
 
-                    https://github.com/pyamsoft/tetherfi/issues/250
+                    https://github.com/pyamsoft/tetherfusenet/issues/250
 
                     <meta-data
                     android:name="android.service.quicksettings.ACTIVE_TILE" android:value="true"
@@ -137,7 +137,7 @@
       android:exported="true"
       android:launchMode="singleInstance"
       android:noHistory="true"
-      android:theme="@style/Theme.TetherFi.Tile"
+      android:theme="@style/Theme.TFApp.Tile"
       android:windowSoftInputMode="adjustPan"
     />
   </application>

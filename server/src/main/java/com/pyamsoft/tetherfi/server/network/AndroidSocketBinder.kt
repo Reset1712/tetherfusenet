@@ -38,8 +38,8 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.first
 
-// https://github.com/pyamsoft/tetherfi/issues/154
-// https://github.com/pyamsoft/tetherfi/issues/331
+// https://github.com/pyamsoft/tetherfusenet/issues/154
+// https://github.com/pyamsoft/tetherfusenet/issues/331
 @Singleton
 internal class AndroidSocketBinder
 @Inject
@@ -178,7 +178,7 @@ internal constructor(
     private fun bindToNetwork(datagram: DatagramSocket, network: Network) {
       try {
         // IF you are connected to a VPN, binding to a socket may not work unless you "whitelist"
-        // TetherFi in your VPN settings
+        // TetherFuseNet in your VPN settings
         network.bindSocket(datagram)
       } catch (e: Throwable) {
         Timber.w {
@@ -191,7 +191,7 @@ internal constructor(
     private fun bindToNetwork(channel: SocketChannel, network: Network) {
       try {
         // IF you are connected to a VPN, binding to a socket may not work unless you "whitelist"
-        // TetherFi in your VPN settings
+        // TetherFuseNet in your VPN settings
         network.bindSocket(channel.socket())
       } catch (e: Throwable) {
         Timber.w {

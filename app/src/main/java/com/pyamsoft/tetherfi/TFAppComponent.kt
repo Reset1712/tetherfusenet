@@ -66,7 +66,7 @@ import kotlinx.coroutines.flow.Flow
 @Component(
     modules =
         [
-            TetherFiComponent.Provider::class,
+            TFAppComponent.Provider::class,
             ServerAppModule::class,
             ServiceAppModule::class,
             BroadcastServerAppModule::class,
@@ -75,7 +75,7 @@ import kotlinx.coroutines.flow.Flow
             BehaviorAppModule::class,
         ],
 )
-internal interface TetherFiComponent {
+internal interface TFAppComponent {
 
   @CheckResult fun plusMain(): MainComponent.Factory
 
@@ -97,7 +97,7 @@ internal interface TetherFiComponent {
         @BindsInstance imageLoader: ImageLoader,
         @BindsInstance theming: Theming,
         @BindsInstance enforcer: ThreadEnforcer,
-    ): TetherFiComponent
+    ): TFAppComponent
   }
 
   @Module

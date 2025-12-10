@@ -56,8 +56,8 @@ internal constructor(
     private val ERROR_CHANNEL_INFO =
         NotifyChannelInfo(
             id = "channel_tetherfi_error_1",
-            title = "TetherFi Errors",
-            description = "TetherFi Errors",
+            title = "TetherFuseNet Errors",
+            description = "TetherFuseNet Errors",
         )
   }
 }

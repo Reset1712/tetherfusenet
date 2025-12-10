@@ -26,6 +26,6 @@ enum class HotspotStartBlocker(val required: Boolean) {
   /** In the future, the user can "agree" to "try anyway" */
   LOCATION(required = false),
 
-  /** TetherFi MUST be allowed to use background data. It does NOT need to be whitelisted */
+  /** TetherFuseNet MUST be allowed to use background data. It does NOT need to be whitelisted */
   BACKGROUND_DATA(required = false),
 }

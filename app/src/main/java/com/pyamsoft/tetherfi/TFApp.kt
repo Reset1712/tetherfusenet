@@ -25,6 +25,7 @@ import com.pyamsoft.pydroid.ui.PYDroid
 import com.pyamsoft.pydroid.ui.debug.InAppDebugStatus
 import com.pyamsoft.pydroid.ui.installPYDroid
 import com.pyamsoft.pydroid.util.isDebugMode
+import com.pyamsoft.tetherfi.core.GITHUB_URL
 import com.pyamsoft.tetherfi.core.PRIVACY_POLICY_URL
 import com.pyamsoft.tetherfi.core.TERMS_CONDITIONS_URL
 import kotlinx.coroutines.CoroutineName
@@ -32,16 +33,15 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
 
-class TetherFi : Application() {
+class TFApp : Application() {
 
   @CheckResult
   private fun initPYDroid(): ModuleProvider {
-    val url = "https://github.com/pyamsoft/tetherfi"
 
     return installPYDroid(
         PYDroid.Parameters(
-            viewSourceUrl = url,
-            bugReportUrl = "$url/issues",
+            viewSourceUrl = GITHUB_URL,
+            bugReportUrl = "${GITHUB_URL}/issues",
             privacyPolicyUrl = PRIVACY_POLICY_URL,
             termsConditionsUrl = TERMS_CONDITIONS_URL,
             version = BuildConfig.VERSION_CODE,
@@ -50,7 +50,7 @@ class TetherFi : Application() {
     )
   }
 
-  private fun installObjectGraph(component: TetherFiComponent) {
+  private fun installObjectGraph(component: TFAppComponent) {
     ObjectGraph.ApplicationScope.install(this, component)
   }
 
@@ -61,7 +61,7 @@ class TetherFi : Application() {
   ) {
     val mods = moduleProvider.get()
     val component =
-        DaggerTetherFiComponent.factory()
+        DaggerTFAppComponent.factory()
             .create(
                 debug = isDebugMode(),
                 inAppDebug = inAppDebugStatus.listenForInAppDebuggingEnabled(),

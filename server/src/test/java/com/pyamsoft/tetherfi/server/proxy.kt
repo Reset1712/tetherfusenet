@@ -27,7 +27,6 @@ import com.pyamsoft.tetherfi.server.clients.BlockedClients
 import com.pyamsoft.tetherfi.server.clients.ByteTransferReport
 import com.pyamsoft.tetherfi.server.clients.ClientResolver
 import com.pyamsoft.tetherfi.server.clients.TetherClient
-import com.pyamsoft.tetherfi.server.lock.Locker
 import com.pyamsoft.tetherfi.server.lock.NoopLock
 import com.pyamsoft.tetherfi.server.network.PassthroughSocketBinder
 import com.pyamsoft.tetherfi.server.network.PreferredNetwork
@@ -274,13 +273,13 @@ internal suspend fun setupProxy(
                 block()
               }
 
-          println("Start TetherFi proxy $HOSTNAME $port")
+          println("Start proxy $HOSTNAME $port")
           delay(3.seconds)
 
-          println("Run with TetherFi proxy")
+          println("Run with proxy")
           scope.withServer(port++, dispatcher.primary)
 
-          println("Done TetherFi proxy")
+          println("Done proxy")
           server.cancel()
 
           // Make sure we got errors when expected

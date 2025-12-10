@@ -22,7 +22,7 @@ pluginManagement {
   }
 }
 
-rootProject.name = "TetherFi"
+rootProject.name = "TetherFuseNet"
 
 include(":app")
 

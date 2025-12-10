@@ -38,6 +38,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.pyamsoft.pydroid.theme.keylines
 import com.pyamsoft.pydroid.ui.uri.rememberUriHandler
+import com.pyamsoft.tetherfi.core.GITHUB_URL
 
 private enum class LinkContentTypes {
   FAQ_LINK
@@ -104,7 +105,7 @@ fun LazyListScope.renderLinks(
                 addLink(
                     url =
                         LinkAnnotation.Url(
-                            url = "https://github.com/pyamsoft/tetherfi/wiki",
+                            url = "${GITHUB_URL}/wiki",
                             linkInteractionListener = { handleLinkClicked(it) },
                         ),
                     start = faqIndex,
@@ -115,7 +116,7 @@ fun LazyListScope.renderLinks(
                 addLink(
                     url =
                         LinkAnnotation.Url(
-                            url = "https://github.com/pyamsoft/tetherfi/wiki/Known-Not-Working",
+                            url = "${GITHUB_URL}/wiki/Known-Not-Working",
                             linkInteractionListener = { handleLinkClicked(it) },
                         ),
                     start = knwIndex,

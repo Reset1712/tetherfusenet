@@ -83,7 +83,7 @@ android {
     create("fdroid") {
       dimension = "store"
 
-      // https://github.com/pyamsoft/tetherfi/issues/307
+      // https://github.com/pyamsoft/tetherfusenet/issues/307
       dependenciesInfo {
         includeInApk = false
         includeInBundle = false
@@ -93,7 +93,7 @@ android {
     create("google") {
       dimension = "store"
 
-      // https://github.com/pyamsoft/tetherfi/issues/307
+      // https://github.com/pyamsoft/tetherfusenet/issues/307
       dependenciesInfo {
         includeInApk = true
         includeInBundle = true

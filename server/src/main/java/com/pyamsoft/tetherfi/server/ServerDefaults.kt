@@ -22,7 +22,7 @@ import androidx.annotation.ChecksSdkIntAtLeast
 
 object ServerDefaults {
 
-  const val WIFI_SSID = "TetherFi"
+  const val WIFI_SSID = "TetherFuseNet"
 
   /** Default port for HTTP server */
   const val HTTP_PORT = 8228

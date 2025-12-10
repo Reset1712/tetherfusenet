@@ -21,10 +21,10 @@
   <string name="status_starting">Starting</string>
   <string name="status_stopping">Stopping</string>
 
-  <string name="hotspot_error">%1$s Hotspot Error</string>
-  <string name="start_hotspot">Start %1$s Hotspot</string>
-  <string name="stop_hotspot">Stop %1$s Hotspot</string>
-  <string name="is_thinking">%1$s is thinking…</string>
+  <string name="hotspot_error">Hotspot Error</string>
+  <string name="start_hotspot">Start Hotspot</string>
+  <string name="stop_hotspot">Stop Hotspot</string>
+  <string name="is_thinking">Thinking…</string>
 
   <string name="title_broadcast_status">Broadcast Status</string>
   <string name="title_proxy_status">Proxy Status</string>

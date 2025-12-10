@@ -30,28 +30,28 @@ internal object ObjectGraph {
 
   internal object ApplicationScope {
 
-    private val trackingMap = mutableMapOf<Application, TetherFiComponent>()
+    private val trackingMap = mutableMapOf<Application, TFAppComponent>()
 
     fun install(
         application: Application,
-        component: TetherFiComponent,
+        component: TFAppComponent,
     ) {
       trackingMap[application] = component
       Timber.d { "Track ApplicationScoped install: $application $component" }
     }
 
     @CheckResult
-    fun retrieve(activity: Activity): TetherFiComponent {
+    fun retrieve(activity: Activity): TFAppComponent {
       return retrieve(activity.application)
     }
 
     @CheckResult
-    fun retrieve(service: Service): TetherFiComponent {
+    fun retrieve(service: Service): TFAppComponent {
       return retrieve(service.application)
     }
 
     @CheckResult
-    fun retrieve(application: Application): TetherFiComponent {
+    fun retrieve(application: Application): TFAppComponent {
       return trackingMap[application].requireNotNull {
         "Could not find ApplicationScoped internals for Application: $application"
       }

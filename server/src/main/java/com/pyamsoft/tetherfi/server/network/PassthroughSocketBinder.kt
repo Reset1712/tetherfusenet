@@ -22,8 +22,8 @@ import java.net.DatagramSocket
 import javax.inject.Inject
 import javax.inject.Singleton
 
-// https://github.com/pyamsoft/tetherfi/issues/154
-// https://github.com/pyamsoft/tetherfi/issues/331
+// https://github.com/pyamsoft/tetherfusenet/issues/154
+// https://github.com/pyamsoft/tetherfusenet/issues/331
 @Singleton
 internal class PassthroughSocketBinder @Inject internal constructor() : SocketBinder {
 

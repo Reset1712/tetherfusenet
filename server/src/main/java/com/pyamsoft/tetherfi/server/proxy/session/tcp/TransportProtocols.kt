@@ -80,7 +80,7 @@ internal suspend inline fun talk(
   // Should be faster than parsing byte buffers raw
   // input.joinTo(output, closeOnEnd = true)
 
-  // https://github.com/pyamsoft/tetherfi/issues/279
+  // https://github.com/pyamsoft/tetherfusenet/issues/279
   //
   // We want to keep track of how many total bytes we've worked with
   var total = 0L

@@ -1,9 +1,9 @@
-TetherFi
+TetherFuseNet
 --------
 
 Share your Android device's Internet connection with other devices without needing Root.
 
-### Get TetherFi
+### Get TetherFuseNet
 
 #### Google Play (Google Play APK)
 
@@ -28,7 +28,7 @@ height="80">](https://www.openapk.net/tetherfi/com.pyamsoft.tetherfi/)
 
 #### Github Releases (FDroid APK)
 or get the APK from the
-[Releases Section](https://github.com/pyamsoft/tetherfi/releases/latest).
+[Releases Section](https://github.com/pyamsoft/tetherfusenet/releases/latest).
 
 ### Screenshots
 
@@ -152,14 +152,14 @@ src="https://raw.githubusercontent.com/pyamsoft/tetherfi/main/art/screens/phone/
 alt="Dark Mode: Quick Tile"
 height="200">](https://raw.githubusercontent.com/pyamsoft/tetherfi/main/art/screens/phone/raw/dark-tile.png)
 
-### What is TetherFi
+### What is TetherFuseNet
 
-TetherFi works by creating a Wi-Fi Direct legacy group and an HTTP proxy server. Other
+TetherFuseNet works by creating a Wi-Fi Direct legacy group and an HTTP proxy server. Other
 devices can connect to the broadcasted Wi-Fi network, and connect to the Internet by
-setting the proxy server settings to the server created by TetherFi. You do not need a
-Hotspot data plan to use TetherFi, but the app works best with "unlimited" data plans.
+setting the proxy server settings to the server created by TetherFuseNet. You do not need a
+Hotspot data plan to use TetherFuseNet, but the app works best with "unlimited" data plans.
 
-#### TetherFi may be for you if:
+#### TetherFuseNet may be for you if:
 
 - You want to share your Android's Wi-Fi or Cellular Data
 - You have an Unlimited Data and a Hotspot plan from your Carrier, but Hotspot
@@ -172,32 +172,32 @@ Hotspot data plan to use TetherFi, but the app works best with "unlimited" data 
 
 ### How
 
-TetherFi uses a Foreground Service to create a long-running Wi-Fi Direct Network that
+TetherFuseNet uses a Foreground Service to create a long-running Wi-Fi Direct Network that
 other devices can connect to. Connected devices can exchange network data between each other.
 The user is in full control of this Foreground Service and can explicitly choose when to
 turn it on and off.
 
-TetherFi is still a work in progress and not everything will work. For example, using the
-app to get an open NAT type on consoles is currently not possible. Using TetherFi for certain
+TetherFuseNet is still a work in progress and not everything will work. For example, using the
+app to get an open NAT type on consoles is currently not possible. Using TetherFuseNet for certain
 online apps, chat apps, video apps, and gaming apps is currently not possible. Some services
 such as email may be unavailable. General "normal" internet browsing should work fine - however,
 it is dependent on the speed and availability of your Android device's internet connection.
 
 To see a list of apps that are known to not work currently, see the
-[Wiki](https://github.com/pyamsoft/tetherfi/wiki/Known-Not-Working)
+[Wiki](https://github.com/pyamsoft/tetherfusenet/wiki/Known-Not-Working)
 
 ### Privacy
 
-TetherFi respects your privacy. TetherFi is open source, and always will be. TetherFi
-will never track you, or sell or share your data. TetherFi offers in-app purchases,
+TetherFuseNet respects your privacy. TetherFuseNet is open source, and always will be. TetherFuseNet
+will never track you, or sell or share your data. TetherFuseNet offers in-app purchases,
 which you may purchase to support the developer. These purchases are never
 required to use the application or any features.
 
 ### Development
 
-TetherFi is developed in the open on GitHub at:
+TetherFuseNet is developed in the open on GitHub at:
 
-[https://github.com/pyamsoft/tetherfi](https://github.com/pyamsoft/tetherfi)
+[https://github.com/pyamsoft/tetherfusenet](https://github.com/pyamsoft/tetherfusenet)
 
 If you know a few things about Android programming and want to help out with
 development, you can do so by creating issue tickets to squash bugs, and

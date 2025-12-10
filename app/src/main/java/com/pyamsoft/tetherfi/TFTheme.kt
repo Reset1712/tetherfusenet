@@ -198,7 +198,7 @@ private fun themeColors(
 }
 
 @Composable
-fun ComponentActivity.TetherFiTheme(
+fun ComponentActivity.TFTheme(
     theme: Theming.Mode,
     isMaterialYou: Boolean,
     content: @Composable () -> Unit,

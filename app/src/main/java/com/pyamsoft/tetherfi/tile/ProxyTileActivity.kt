@@ -28,7 +28,7 @@ import com.pyamsoft.pydroid.arch.SaveStateDisposableEffect
 import com.pyamsoft.pydroid.core.requireNotNull
 import com.pyamsoft.tetherfi.ObjectGraph
 import com.pyamsoft.tetherfi.R
-import com.pyamsoft.tetherfi.TetherFiTheme
+import com.pyamsoft.tetherfi.TFTheme
 import com.pyamsoft.tetherfi.core.Timber
 import com.pyamsoft.tetherfi.getSystemDarkMode
 import com.pyamsoft.tetherfi.main.SystemBars
@@ -56,7 +56,7 @@ class ProxyTileActivity : ComponentActivity() {
   }
 
   override fun onCreate(savedInstanceState: Bundle?) {
-    setTheme(R.style.Theme_TetherFi_Tile)
+    setTheme(R.style.Theme_TFApp_Tile)
     super.onCreate(savedInstanceState)
 
     ObjectGraph.ApplicationScope.retrieve(this).plusTile().create().inject(this)
@@ -72,7 +72,7 @@ class ProxyTileActivity : ComponentActivity() {
 
       SaveStateDisposableEffect(vm)
 
-      TetherFiTheme(
+      TFTheme(
           theme = theme,
           isMaterialYou = isMaterialYou,
       ) {

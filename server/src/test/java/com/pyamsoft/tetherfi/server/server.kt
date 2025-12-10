@@ -65,7 +65,7 @@ val RESPONSE_TEXT =
             </div>
         </body>
     </html>
-                   """
+    """
         .trimIndent()
 
 @OptIn(ExperimentalCoroutinesApi::class, DelicateCoroutinesApi::class)

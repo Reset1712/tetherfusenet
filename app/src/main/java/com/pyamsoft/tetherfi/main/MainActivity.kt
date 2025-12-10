@@ -36,7 +36,7 @@ import com.pyamsoft.pydroid.ui.changelog.buildChangeLog
 import com.pyamsoft.pydroid.ui.util.fillUpToPortraitSize
 import com.pyamsoft.tetherfi.ObjectGraph
 import com.pyamsoft.tetherfi.R
-import com.pyamsoft.tetherfi.TetherFiTheme
+import com.pyamsoft.tetherfi.TFTheme
 import com.pyamsoft.tetherfi.behavior.tweaks.ScreenOnHandler
 import com.pyamsoft.tetherfi.core.Timber
 import com.pyamsoft.tetherfi.core.notification.NotificationErrorLauncher
@@ -128,7 +128,7 @@ class MainActivity : ComponentActivity() {
 
       SaveStateDisposableEffect(vm)
 
-      TetherFiTheme(
+      TFTheme(
           theme = theme,
           isMaterialYou = isMaterialYou,
       ) {

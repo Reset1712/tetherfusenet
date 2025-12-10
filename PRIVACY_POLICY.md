@@ -1,6 +1,6 @@
 # Privacy Policy
 
-pyamsoft built the TetherFi App as an Open Source app. This App is provided by pyamsoft
+pyamsoft built the TetherFuseNet App as an Open Source app. This App is provided by pyamsoft
 at no cost and is intended for use as is.
 
 ## Location Data and Use

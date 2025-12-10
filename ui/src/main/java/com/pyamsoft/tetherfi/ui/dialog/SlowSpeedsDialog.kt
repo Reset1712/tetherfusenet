@@ -44,6 +44,7 @@ import androidx.compose.ui.unit.dp
 import com.pyamsoft.pydroid.theme.keylines
 import com.pyamsoft.pydroid.ui.icons.RadioButtonUnchecked
 import com.pyamsoft.pydroid.ui.uri.rememberUriHandler
+import com.pyamsoft.tetherfi.core.GITHUB_URL
 import com.pyamsoft.tetherfi.ui.R
 
 private enum class SlowSpeedsContentTypes {
@@ -167,8 +168,7 @@ private fun SlowSpeedsLink(
               addLink(
                   url =
                       LinkAnnotation.Url(
-                          url =
-                              "https://github.com/pyamsoft/tetherfi/wiki/Slow-Hotspot-Performance",
+                          url = "${GITHUB_URL}/wiki/Slow-Hotspot-Performance",
                           linkInteractionListener = { handleLinkClicked(it) },
                       ),
                   start = slowSpeedIndex,

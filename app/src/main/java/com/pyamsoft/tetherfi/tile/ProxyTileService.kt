@@ -263,7 +263,7 @@ internal class ProxyTileService internal constructor() : TileService() {
             component,
         )
       } catch (e: Throwable) {
-        // https://github.com/pyamsoft/tetherfi/issues/229
+        // https://github.com/pyamsoft/tetherfusenet/issues/229
         Timber.e(e) { "Error trying to update Tile state. Android OS error?" }
       }
     }

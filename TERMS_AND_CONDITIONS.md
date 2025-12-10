@@ -1,6 +1,6 @@
 # Terms & Conditions
 
-By downloading or using TetherFi (the/my App), these terms will automatically apply to
+By downloading or using TetherFuseNet (the/my App), these terms will automatically apply to
 you – you should make sure therefore that you read them carefully before using the app.
 
 pyamsoft is committed to ensuring that the app is as useful and efficient as possible.

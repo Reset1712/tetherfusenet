@@ -39,7 +39,7 @@ internal class RNDISServer @Inject internal constructor() : BroadcastServerImple
   private suspend fun resolveRNDISNetwork(): String =
       withContext(context = Dispatchers.IO) {
         // On some devices, this method does not return interfaces?
-        // https://github.com/pyamsoft/tetherfi/issues/351
+        // https://github.com/pyamsoft/tetherfusenet/issues/351
         val allIfaces: Enumeration<NetworkInterface>? = NetworkInterface.getNetworkInterfaces()
         val candidates = mutableListOf<RNDISCandidate>()
         if (allIfaces != null) {
@@ -128,10 +128,10 @@ internal class RNDISServer @Inject internal constructor() : BroadcastServerImple
             // Samsung?
             "rndis",
 
-            // https://github.com/pyamsoft/tetherfi/issues/351
+            // https://github.com/pyamsoft/tetherfusenet/issues/351
             "ncm",
 
-            // https://github.com/pyamsoft/tetherfi/issues/394#issuecomment-2930177923
+            // https://github.com/pyamsoft/tetherfusenet/issues/394#issuecomment-2930177923
             "usb",
         )
     private val EXPECTED_RNDIS_IP_PREFIX_LIST =
@@ -139,7 +139,7 @@ internal class RNDISServer @Inject internal constructor() : BroadcastServerImple
             // Samsung? and others?
             "192.168.",
             // The Z-Fold 7
-            // https://github.com/pyamsoft/tetherfi/issues/421
+            // https://github.com/pyamsoft/tetherfusenet/issues/421
             "10.",
             // A known private IP space, though no known cases of it in the wild
             // TODO(Peter): Ideally a Regex instead of listing out every single one

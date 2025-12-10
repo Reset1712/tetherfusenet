@@ -22,10 +22,10 @@
   <string name="status_starting">正在啟動</string>
   <string name="status_stopping">正在中止</string>
 
-  <string name="hotspot_error">%1$s 網路熱點錯誤</string>
-  <string name="start_hotspot">啟動 %1$s 網路熱點</string>
-  <string name="stop_hotspot">中止 %1$s 網路熱點</string>
-  <string name="is_thinking">%1$s 正在判斷當前狀態……</string>
+  <string name="hotspot_error">網路熱點錯誤</string>
+  <string name="start_hotspot">啟動 網路熱點</string>
+  <string name="stop_hotspot">中止 網路熱點</string>
+  <string name="is_thinking">正在判斷當前狀態……</string>
 
   <string name="title_broadcast_status">廣播狀態</string>
   <string name="title_proxy_status">代理服務狀態</string>
