@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="operating_settings">Настройки работы</string>
+    <string name="operating_always_alive_title">Всегда активен</string>
+    <string name="operating_always_alive_description">Это позволит точке доступа %1$s продолжать работу, даже если приложение закрыто.\n\nЭто значительно улучшит ваш опыт и производительность сети.\n(рекомендуется)</string>
+</resources>

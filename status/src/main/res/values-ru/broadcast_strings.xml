@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="expert_broadcast_title">Тип точки доступа</string>
+    <string name="expert_broadcast_description">Изменить способ создания соединения %1$s</string>
+
+    <string name="expert_broadcast_type_wifi_direct_title">Wi-Fi Direct</string>
+    <string name="expert_broadcast_type_wifi_direct_description">
+        Используя Wi-Fi Direct, создать мобильную точку доступа для подключения нескольких устройств.
+        \n\nЭто зависит от способности вашего устройства использовать Wi-Fi Direct, что поддерживается не всеми моделями.
+    </string>
+
+    <string name="expert_broadcast_type_rndis_title">USB-модем</string>
+    <string name="expert_broadcast_type_rndis_description">
+        Используя USB-модем (RNDIS), создать соединение для одного устройства через USB-кабель.
+        \n\nЭто зависит от способности вашего устройства использовать USB-модем, что поддерживается не всеми моделями.
+    </string>
+
+    <string name="expert_preferred_network_title">Предпочитаемая сеть</string>
+    <string name="expert_preferred_network_description">Изменить тип подключения, который %1$s использует для передачи данных</string>
+
+    <string name="expert_preferred_network_none_title">Активная сеть</string>
+    <string name="expert_preferred_network_none_description">
+        Соединения через точку доступа будут использовать текущее активное подключение устройства.
+    </string>
+
+    <string name="expert_preferred_network_wifi_title">Wi-Fi</string>
+    <string name="expert_preferred_network_wifi_description">
+        Соединения через точку доступа будут использовать Wi-Fi, если он доступен.
+    </string>
+
+    <string name="expert_preferred_network_cellular_title">Мобильные данные</string>
+    <string name="expert_preferred_network_cellular_description">
+        Соединения через точку доступа будут использовать мобильные данные, если они доступны.
+    </string>
+</resources>

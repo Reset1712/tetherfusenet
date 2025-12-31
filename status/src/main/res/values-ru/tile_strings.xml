@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tile_qr_code">QR Код</string>
+    <string name="tile_refresh_hotspot">Обновить</string>
+
+    <string name="tile_broadcast_error">Ошибка вещания</string>
+    <string name="tile_proxy_error">Ошибка прокси</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="viewmode_setup_instructions">Инструкция по настройке</string>
+    <string name="viewmode_setup_view_instructions">Не знаете, что делать дальше?\nСмотрите %1$s</string>
+    <string name="viewmode_hotspot_name">ИМЯ ХОТ-СПОТА</string>
+    <string name="viewmode_hotspot_password">ПАРОЛЬ ХОТ-СПОТА</string>
+    <string name="viewmode_hotspot_hostname">URL/АДРЕС ПРОКСИ</string>
+</resources>

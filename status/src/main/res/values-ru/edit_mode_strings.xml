@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="editmode_system_defined">ЗАДАНО СИСТЕМОЙ: НЕЛЬЗЯ ИЗМЕНИТЬ</string>
+
+    <string name="editmode_type_ssid">SSID</string>
+
+    <string name="editmode_label_map">%1$s — %2$s</string>
+
+    <string name="editmode_label_valid">Валидно</string>
+    <string name="editmode_label_invalid">Невалидно</string>
+    <string name="editmode_label_visible">Видно</string>
+    <string name="editmode_label_hidden">Скрыто</string>
+    <string name="editmode_hotspot_password">ПАРОЛЬ ХОТ-СПОТА</string>
+    <string name="editmode_hotspot_name">ИМЯ ХОТ-СПОТА</string>
+
+    <string name="editmode_hotspot_proxy_mode_title">Режим прокси</string>
+
+    <string name="editmode_hotspot_proxy_http_title">HTTP Прокси</string>
+    <string name="editmode_hotspot_proxy_http_description">
+        Режимы HTTP и HTTPS.
+        Простой и быстрый режим. Совместим с большинством онлайн-сервисов.
+        Большинству пользователей рекомендуется эта опция.
+    </string>
+
+    <string name="editmode_hotspot_proxy_socks_title">SOCKS Прокси (БЕТА)</string>
+    <string name="editmode_hotspot_proxy_socks_description">
+        Режимы SOCKS4A и SOCKS5H (CONNECT/CONNECT-UDP).
+        Этот режим медленный и предназначен для специфических задач.
+        Большинству пользователей эта опция не нужна, оставьте её выключенной.
+    </string>
+</resources>

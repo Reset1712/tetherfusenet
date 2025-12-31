@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="configure_the_proxy_settings">Настройте параметры прокси</string>
+    <string name="connect_to_hotspot">Подключитесь к точке доступа %1$s</string>
+    <string name="open_wifi_settings">Открыть настройки Wi-Fi</string>
+    <string name="label_hotspot_name">Имя</string>
+    <string name="label_hotspot_hostname">URL</string>
+
+    <string name="open_connection_settings">Открыть настройки Подключения/Интернета</string>
+
+    <string name="view_http_options">Настроить HTTP прокси</string>
+    <string name="view_socks_options">Настроить SOCKS</string>
+
+    <string name="label_hotspot_http_port">HTTP Порт</string>
+    <string name="label_hotspot_socks_port">SOCKS Порт</string>
+
+    <string name="http_manual_proxy">Используйте режим ВРУЧНУЮ и настройте параметры прокси для HTTP и HTTPS.</string>
+
+    <string name="socks_manual_proxy">Используйте режим ВРУЧНУЮ и настройте параметры SOCKS прокси. SOCKS прокси будет разрешать DNS.</string>
+</resources>

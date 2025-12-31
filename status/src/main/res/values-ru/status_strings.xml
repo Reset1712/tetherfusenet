@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_error">Произошла непредвиденная ошибка.</string>
+    <string name="status_not_running">Не запущено</string>
+    <string name="status_running">Работает</string>
+    <string name="status_starting">Запуск</string>
+    <string name="status_stopping">Остановка</string>
+
+    <string name="hotspot_error">Ошибка точки доступа</string>
+    <string name="start_hotspot">Запуск</string>
+    <string name="stop_hotspot">Стоп</string>
+    <string name="is_thinking">Думаю…</string>
+
+    <string name="title_broadcast_status">Статус вещания</string>
+    <string name="title_proxy_status">Статус прокси</string>
+    <string name="title_hotspot_status">Статус точки доступа</string>
+
+    <string name="hotspot_proxy_http_port">HTTP ПРОКСИ ПОРТ</string>
+    <string name="hotspot_proxy_socks_port">SOCKS ПРОКСИ ПОРТ</string>
+</resources>

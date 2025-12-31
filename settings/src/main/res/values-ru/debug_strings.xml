@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="yolo_title">Принудительная ошибка TCP сервера</string>
+    <string name="yolo_explain">Симулировать IOException TCP сервера, проверить работу «Упорного Прокси» (режим YOLO)</string>
+    <string name="broadcast_title">Принудительная ошибка вещания</string>
+    <string name="broadcast_explain">Симулировать ошибку Broadcast</string>
+    <string name="proxy_title">Принудительная ошибка прокси</string>
+    <string name="proxy_explain">Симулировать ошибку Proxy</string>
+    <string name="empty_group_title">Пустая информация о группе</string>
+    <string name="empty_group_explain">Заставить сервер WiFi Direct вернуть пустой ответ</string>
+    <string name="connected_group_title">Информация о подключенной группе</string>
+    <string name="connected_group_explain">Заставить сервер WiFi Direct вернуть ответ «подключено»</string>
+    <string name="error_group_title">Ошибка информации о группе</string>
+    <string name="error_group_explain">Заставить сервер WiFi Direct вернуть ошибку</string>
+    <string name="empty_connection_title">Пустая информация о соединении</string>
+    <string name="empty_connection_explain">Заставить сервер WiFi Direct вернуть пустой ответ соединения</string>
+    <string name="connected_connection_title">Информация о подключенном соединении</string>
+    <string name="connected_connection_explain">Заставить сервер WiFi Direct вернуть ответ соединения «подключено»</string>
+    <string name="error_connection_title">Ошибка информации о соединении</string>
+    <string name="error_connection_explain">Заставить сервер WiFi Direct вернуть ошибку соединения</string>
+
+    <string name="experimental_flags_title">Эксперименты</string>
+    <string name="experimental_flags_description">Эти опции экспериментальны. Они могут снизить стабильность приложения и могут быть удалены или изменены в любое время</string>
+    <string name="runtime_flag_enable_socks_proxy_title">Включить SOCKS прокси</string>
+    <string name="runtime_flag_enable_socks_proxy_description">Включить экспериментальную поддержку SOCKS прокси (4A / 5H)</string>
+    <string name="error_socket_oom_server_title">Фейковый Socket OOM (Сервер)</string>
+    <string name="error_socket_oom_server_explain">Симулировать ошибку OOM в билдере сокета сервера</string>
+    <string name="error_socket_oom_client_title">Фейковый Socket OOM (Клиент)</string>
+    <string name="error_socket_oom_client_explain">Симулировать ошибку OOM в билдере сокета клиента</string>
+</resources>

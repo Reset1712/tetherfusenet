@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main_tab_name_status">Статус</string>
+    <string name="main_tab_name_behavior">Поведение</string>
+    <string name="main_tab_name_info">Инфо</string>
+    <string name="main_tab_name_connections">Клиенты</string>
+</resources>

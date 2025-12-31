@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_try_again">Пожалуйста, откройте приложение %1$s и попробуйте снова.</string>
+    <string name="status_error">ОШИБКА</string>
+    <string name="status_stopped">ОСТАНОВЛЕНО</string>
+    <string name="status_running">РАБОТАЕТ</string>
+    <string name="status_starting">ЗАПУСК…</string>
+    <string name="status_stopping">ОСТАНОВКА…</string>
+</resources>

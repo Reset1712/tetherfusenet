@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="faq_blurb">Есть вопросы о работе %1$s? Заметили проблемы с подключением?\n\nСмотрите наши %2$s и приложения, которые %3$s</string>
+    <string name="faqs">ЧаВо (FAQ)</string>
+    <string name="known_to_not_work">Известны как нерабочие</string>
+    <string name="view_information">Информация</string>
+    <string name="something_went_wrong">Что-то пошло не так</string>
+    <string name="unknown_error">ОШИБКА</string>
+
+    <string name="hotspot_speed_what">Медленная работа точки доступа</string>
+    <string name="hotspot_speed_sad">Сталкиваетесь с %1$s?</string>
+    <string-array name="hotspot_speed_items">
+        <item>Подключите устройство к питанию и убедитесь, что оно заряжается</item>
+        <item>Включите твик &quot;Всегда активен&quot; (откл. оптимизацию батареи)</item>
+        <item>Попробуйте сменить частоту вещания между 2.4ГГц и 5ГГц</item>
+        <item>Перезагрузите это устройство и подключаемое устройство</item>
+        <item>Несколько раз включите/выключите режим полета, Wi-Fi и Bluetooth на этом устройстве</item>
+        <item>Включите режим &quot;Макс. производительность&quot; в настройках Баланса производительности</item>
+        <item>Уменьшите экспертную настройку &quot;Тайм-аут сокета&quot; до 10 или даже 3 секунд</item>
+    </string-array>
+
+    <string name="hotspot_speed_faq">Всё ещё низкая скорость?\nПосетите Wiki для диагностики %1$s</string>
+</resources>

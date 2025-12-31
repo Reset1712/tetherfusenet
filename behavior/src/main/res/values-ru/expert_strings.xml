@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="expert_title">Экспертные настройки</string>
+    <string name="expert_description">Это раздел для продвинутых пользователей.\n\nИзменение этих опций может полностью изменить работу %1$s. Действуйте на свой страх и риск. Большинству пользователей НЕ нужно менять эти настройки.</string>
+
+    <string name="expert_power_balance_title">Баланс производительности</string>
+    <string name="expert_power_balance_description">Только для продвинутых пользователей.\n\nВы можете настроить производительность и потребление ресурсов точки доступа %1$s, изменив количество виртуальных потоков, выделенных для сети.\n\nБольше потоков обычно означает более высокую скорость, но увеличивает расход батареи и может привести к нагреву или замедлению устройства.</string>
+    <string name="expert_power_balance_button">Настроить баланс</string>
+
+    <string name="expert_balance_max_title">Макс. производительность</string>
+    <string name="expert_balance_max_description">Неограниченные потоки. Обеспечивает максимальную скорость. Расход батареи не учитывается.</string>
+    <string name="expert_balance_super_save_title">Макс. энергосбережение</string>
+    <string name="expert_balance_super_save_description">%1$d потоков. Минимальный расход батареи, но самая медленная работа точки доступа.</string>
+    <string name="expert_balance_save_title">Энергосбережение</string>
+    <string name="expert_balance_save_description">%1$d потоков. Меньший расход батареи, но более медленная работа.</string>
+    <string name="expert_balance_normal_title">Сбалансированный</string>
+    <string name="expert_balance_normal_description">%1$d потоков. Баланс между расходом батареи и производительностью.</string>
+    <string name="expert_balance_performance_title">Производительность</string>
+    <string name="expert_balance_performance_description">%1$d потоков. Лучшая производительность ценой большего расхода батареи.</string>
+    <string name="expert_balance_super_performance_title">Высокая производительность</string>
+    <string name="expert_balance_super_performance_description">%1$d потоков. Отличная производительность ценой значительного расхода батареи.</string>
+
+    <string name="expert_socket_timeout_title">Тайм-аут сокета</string>
+    <string name="expert_socket_timeout_description">Для продвинутых пользователей.\n\nВы можете настроить тайм-аут, который определяет, как долго %1$s будет ждать соединения перед закрытием сокета. Для большинства современных сайтов и нормального соединения подходят настройки по умолчанию. Если соединения часто обрываются по тайм-ауту, попробуйте увеличить значение. Если высокая задержка (пинг), попробуйте уменьшить.</string>
+    <string name="expert_socket_timeout_button">Настроить тайм-аут</string>
+
+    <string name="expert_timeout_yolo_title">Без тайм-аута</string>
+    <string name="expert_timeout_yolo_description">Никогда не закрывать соединения, пока сайт сам их не закроет. Игнорирует потребление памяти и задержки ради попытки заставить сайты работать. При множестве соединений может вызвать огромные задержки и расход памяти. Рекомендуется настроить Баланс производительности на Максимум.</string>
+    <string name="expert_timeout_toofast_title">3 секунды</string>
+    <string name="expert_timeout_toofast_description">Почти не ждет. При быстром интернете большинство сайтов должно работать. Агрессивная очистка, снижает потребление памяти и задержки, но есть риск разрыва соединений.</string>
+    <string name="expert_timeout_fast_title">10 секунд</string>
+    <string name="expert_timeout_fast_description">Слегка ускоренный тайм-аут, должен работать с большинством сайтов. Немного снижает потребление памяти.</string>
+    <string name="expert_timeout_balance_title">30 секунд</string>
+    <string name="expert_timeout_balance_description">Наиболее сбалансированная настройка. Нормальное потребление памяти и задержки.</string>
+    <string name="expert_timeout_conservative_title">1 минута</string>
+    <string name="expert_timeout_conservative_description">Ждет дольше, позволяя работать медленным сайтам. Немного повышает потребление памяти.</string>
+    <string name="expert_timeout_longwait_title">5 минут</string>
+    <string name="expert_timeout_longwait_description">Почти все сайты должны работать. При множестве соединений может значительно увеличить задержки и расход памяти.</string>
+</resources>

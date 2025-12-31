@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="block_privacy_policy">Политика конфиденциальности</string>
+    <string name="block_view_privacy_policy">Просмотреть %1$s %2$s</string>
+    <string name="block_vpn_title">Конфликт VPN</string>
+    <string name="block_vpn_description">У %1$s возникают проблемы с запуском точки доступа при включенном VPN.</string>
+    <string name="block_vpn_instruction">Пожалуйста, отключите VPN, а затем попробуйте запустить точку доступа снова. Либо вы можете включить твик «%1$s», чтобы проверить, работает ли ваш VPN с %2$s.</string>
+
+    <string name="block_location_title">Требуется геолокация</string>
+    <string name="block_location_description">У %1$s возникают проблемы с запуском точки доступа, когда службы геолокации выключены. Даже если вы дали разрешение, сама служба должна быть включена.</string>
+    <string name="block_location_instruction">Пожалуйста, включите геолокацию на устройстве и попробуйте снова. Либо вы можете включить твик «%1$s», чтобы проверить, работает ли %2$s на вашем устройстве без включения локации.</string>
+    <string name="block_location_open_settings">Включить геолокацию</string>
+
+    <string name="block_permission_title">Запрос разрешения</string>
+    <string name="block_permission_description">%1$s требуется разрешение %2$s для создания Wi-Fi группы</string>
+    <string name="block_permission_reassure">%1$s не будет использовать эти разрешения ни для чего, кроме создания Wi-Fi группы.</string>
+    <string name="block_permission_open_settings">Открыть настройки</string>
+    <string name="block_permission_deny">Запретить</string>
+    <string name="block_permission_grant">Разрешить</string>
+    <string name="block_permission_type_location">ТОЧНОЕ МЕСТОПОЛОЖЕНИЕ</string>
+    <string name="block_permission_type_nearby">УСТРОЙСТВА ПОБЛИЗОСТИ</string>
+
+    <string name="block_background_data_open_settings">Открыть настройки</string>
+
+    <string name="block_background_data_title">Требуются фоновые данные</string>
+    <string name="block_background_data_description">У %1$s проблемы с запуском точки доступа, так как использование фоновых данных ограничено. Пожалуйста, разрешите фоновые данные, или включите твик «%2$s», чтобы проверить, можно ли обойтись без этого.</string>
+</resources>

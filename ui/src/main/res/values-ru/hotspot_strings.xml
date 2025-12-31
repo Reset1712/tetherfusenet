@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ssid_no_name">НЕТ ИМЕНИ</string>
+    <string name="server_no_host">НЕТ ХОСТА</string>
+    <string name="invalid_port">НЕВЕРНЫЙ ПОРТ</string>
+</resources>

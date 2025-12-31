@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="connection_last_seen">Был в сети: %1$s</string>
+    <string name="connection_options">Опции подключения</string>
+    <string name="connection_total_to_internet">Всего отправлено: %1$s</string>
+    <string name="connection_total_from_internet">Всего скачано: %1$s</string>
+
+    <string name="connection_excuse">Мы активно ищем более удобное решение.</string>
+    <string name="connection_sorry">Заранее извиняемся. Операционная система не позволяет мне видеть, какое устройство подключено, поэтому этот экран позволяет управлять только по IP-адресу.</string>
+    <string name="connection_none">Пока нет подключений!</string>
+    <string name="connection_start_before_manage">Запустите точку доступа для просмотра и управления устройствами.</string>
+    <string name="connection_running_explain">По умолчанию любому подключенному клиенту разрешен доступ в Интернет через точку доступа. Если вы хотите заблокировать клиента, вы можете выключить переключатель для соответствующего IP-адреса.</string>
+
+    <string name="option_set_nickname">Задать имя</string>
+
+    <string name="transfer_over_limit">ЛИМИТ ПРЕВЫШЕН: %1$s</string>
+    <string name="transfer_limit">%1$s: %2$s</string>
+
+    <string name="option_set_transfer">Установить лимит трафика</string>
+    <string name="transfer_label">Лимит трафика</string>
+
+    <string name="option_set_bandwidth">Установить лимит скорости</string>
+    <string name="bandwidth_label">Ограничение скорости</string>
+    <string name="bandwidth_limit">%1$s: %2$s/сек</string>
+</resources>

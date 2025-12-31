@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="qr_code">QR Код</string>
+    <string name="qr_code_explain">Отсканируйте код для подключения</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="trouble_title">Не удалось запустить точку доступа %1$s.</string>
+    <string name="trouble_description">Это НЕ ошибка приложения, это ошибка %1$s.</string>
+
+    <string name="trouble_err_type_both">вашего устройства и конфигурации</string>
+    <string name="trouble_err_type_proxy">вашей конфигурации</string>
+    <string name="trouble_err_type_broadcast">вашего устройства</string>
+    <string name="trouble_double_check">Пожалуйста, проверьте эти проблемы и попробуйте снова:</string>
+
+    <string name="trouble_proxy_already_used">• Порт точки доступа может быть уже занят другим приложением</string>
+    <string name="trouble_proxy_port">• Номер порта должен быть между 1025 и 65000</string>
+
+    <string name="trouble_broadcast_wifi_on">• Wi-Fi должен быть ВКЛЮЧЕН для запуска точки доступа</string>
+    <string name="trouble_broadcast_wifi_restart">• Wi-Fi стоит перезагрузить, выключив и включив его снова</string>
+    <string name="trouble_broadcast_password_length">• Пароль должен быть не короче 8 символов</string>
+
+    <string name="trouble_location_service">• Службы геолокации должны быть ВКЛЮЧЕНЫ</string>
+    <string name="trouble_connect_rndis">• Ваше устройство должно быть физически подключено по USB-кабелю для передачи данных</string>
+    <string name="trouble_broadcast_rndis">• USB-модем должен быть ВКЛЮЧЕН</string>
+
+    <string name="trouble_click_expand">Нажмите, чтобы развернуть детали ошибки</string>
+</resources>

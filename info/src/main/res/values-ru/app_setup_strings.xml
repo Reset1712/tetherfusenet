@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="turn_on_wi_fi">Включите Wi-Fi.</string>
+    <string name="wifi_must_be_on">Вам не обязательно подключаться к сети, но Wi-Fi должен быть включен для работы %1$s.</string>
+    <string name="connect_internet">Подключитесь к Интернету.</string>
+    <string name="connect_internet_options">Вы можете подключиться через Wi-Fi или мобильные данные.</string>
+    <string name="optionally_configure_hotspot">Вы можете настроить имя, пароль, порт прокси и частоту вещания. Это не обязательно, значения по умолчанию подойдут большинству.</string>
+    <string name="optionally_configure_power">Вы можете опционально игнорировать системную оптимизацию батареи Android, что позволит %1$s работать с максимальной производительностью. Это может расходовать больше батареи, но значительно улучшит работу сети.</string>
+    <string name="start_the_hotspot">Запустите точку доступа %1$s.</string>
+    <string name="check_hotspot_green">Убедитесь, что статусы Вещания, Прокси и Точки доступа активны и работают.</string>
+
+    <string name="connect_usb_ethernet">Подключите USB-кабель к устройству</string>
+    <string name="usb_tethering_must_be_on">Вам нужно включить USB-модем на устройстве. Тариф с поддержкой раздачи не обязателен, но режим модема (RNDIS) должен быть активен для работы %1$s.</string>
+</resources>

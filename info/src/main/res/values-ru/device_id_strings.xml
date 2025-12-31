@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="this_device">Это устройство</string>
+    <string name="other_device">Другое устройство</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sharing_complete">Ваше устройство теперь должно раздавать интернет!</string>
+    <string name="sharing_caveat">На этом этапе обычный просмотр веб-страниц и почта должны работать. Если нет, отключитесь от точки доступа %1$s и дважды проверьте правильность введенных настроек сети и прокси.</string>
+    <string name="proxy_having_trouble">Проблемы с настройкой прокси? Смотрите подробные инструкции %1$s.</string>
+    <string name="proxy_having_link_text">здесь</string>
+</resources>
