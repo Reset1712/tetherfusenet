@@ -8,8 +8,8 @@ plugins {
   alias(libs.plugins.compose.compiler) apply false
   alias(libs.plugins.spotless) apply false
   alias(libs.plugins.ksp) apply false
-  alias(libs.plugins.doctor) apply true
-  alias(libs.plugins.caupain) apply true
+  alias(libs.plugins.doctor) apply false
+  alias(libs.plugins.caupain) apply false
 }
 
 allprojects {
@@ -30,6 +30,17 @@ allprojects {
         includeGroup("com.github.pyamsoft.ktor")
       }
     }
+  }
+
+  configurations.all {
+      resolutionStrategy {
+          eachDependency { details ->
+              if (details.requested.group == 'io.ktor') {
+                  details.useTarget group: 'com.github.pyamsoft.ktor', name: details.requested.name, version: '3.3.3-PYAMSOFT'
+                  details.because "Force use of Pyamsoft fork from JitPack"
+              }
+          }
+      }
   }
 
   spotless {
