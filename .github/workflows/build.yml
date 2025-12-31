@@ -27,8 +27,11 @@ jobs:
       - name: Create dummy local.properties
         run: touch local.properties
 
-      - name: Patch build.gradle to allow io.ktor from JitPack
-        run: sed -i '/includeGroup("com.github.pyamsoft")/a \                includeGroup("io.ktor")' build.gradle
+      - name: Allow Ktor fork group in build.gradle
+        run: sed -i '/includeGroup("com.github.pyamsoft")/a \                includeGroup("com.github.pyamsoft.ktor")' build.gradle
+
+      - name: Patch libs.versions.toml to use JitPack coordinates
+        run: sed -i 's/group = "io.ktor"/group = "com.github.pyamsoft.ktor"/g' gradle/libs.versions.toml
 
       - name: Make gradlew executable
         run: chmod +x gradlew
