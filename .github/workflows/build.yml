@@ -27,14 +27,17 @@ jobs:
       - name: Create dummy local.properties
         run: touch local.properties
 
+      - name: Patch build.gradle to allow io.ktor from JitPack
+        run: sed -i '/includeGroup("com.github.pyamsoft")/a \                includeGroup("io.ktor")' build.gradle
+
       - name: Make gradlew executable
         run: chmod +x gradlew
 
       - name: Build Debug APK
-        run: ./gradlew :app:assembleDebug
+        run: ./gradlew :app:assembleDebug --no-configuration-cache
 
       - name: Run Unit Tests
-        run: ./gradlew :app:testDebugUnitTest
+        run: ./gradlew :app:testDebugUnitTest --no-configuration-cache
 
       - name: Upload Debug APKs
         uses: actions/upload-artifact@v4
