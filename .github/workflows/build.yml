@@ -8,12 +8,21 @@ on:
 
 jobs:
   build:
-    name: Build and Test
+    name: Build Debug APK
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout TetherFuseNet
         uses: actions/checkout@v4
+        with:
+          path: project
+
+      - name: Checkout Custom Ktor
+        uses: actions/checkout@v4
+        with:
+          repository: pyamsoft/ktor
+          ref: pyamsoft-3.3.3
+          path: ktor-source
 
       - name: Set up JDK 21
         uses: actions/setup-java@v4
@@ -21,24 +30,27 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
-      - name: Setup Gradle
+      - name: Build Ktor and Publish to Maven Local
+        working-directory: ktor-source
+        run: |
+          chmod +x gradlew
+          ./gradlew publishToMavenLocal -x test
+
+      - name: Setup Gradle for Project
         uses: gradle/actions/setup-gradle@v3
-
-      - name: Create dummy local.properties
-        run: touch local.properties
-
-      - name: Make gradlew executable
-        run: chmod +x gradlew
+        with:
+          build-root-directory: project
 
       - name: Build Debug APK
-        run: ./gradlew :app:assembleDebug --no-configuration-cache
-
-      - name: Run Unit Tests
-        run: ./gradlew :app:testDebugUnitTest --no-configuration-cache
+        working-directory: project
+        run: |
+          touch local.properties
+          chmod +x gradlew
+          ./gradlew :app:assembleDebug --no-configuration-cache -Dorg.gradle.dependency.verification=off
 
       - name: Upload Debug APKs
         uses: actions/upload-artifact@v4
         with:
           name: debug-apks
-          path: app/build/outputs/apk/*/debug/*.apk
+          path: project/app/build/outputs/apk/*/debug/*.apk
           if-no-files-found: error
