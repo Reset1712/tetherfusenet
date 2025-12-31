@@ -27,6 +27,34 @@ jobs:
       - name: Create dummy local.properties
         run: touch local.properties
 
+      # Патчим build.gradle:
+      # 1. Разрешаем группу com.github.pyamsoft.ktor в JitPack
+      # 2. Добавляем resolutionStrategy для принудительной замены io.ktor на наш форк
+      - name: Patch build.gradle for dependencies
+        run: |
+          sed -i '/includeGroup("com.github.pyamsoft")/a \                includeGroup("com.github.pyamsoft.ktor")' build.gradle
+          cat <<EOF >> build.gradle
+
+          allprojects {
+              configurations.all {
+                  resolutionStrategy {
+                      eachDependency { details ->
+                          if (details.requested.group == 'io.ktor' && details.requested.name == 'ktor-network') {
+                              details.useTarget group: 'com.github.pyamsoft.ktor', name: 'ktor-network', version: '3.3.3-PYAMSOFT'
+                          }
+                          if (details.requested.group == 'io.ktor' && details.requested.name == 'ktor-server-netty-jvm') {
+                              details.useTarget group: 'com.github.pyamsoft.ktor', name: 'ktor-server-netty-jvm', version: '3.3.3-PYAMSOFT'
+                          }
+                      }
+                  }
+              }
+          }
+          EOF
+
+      # Также патчим libs.versions.toml на всякий случай
+      - name: Patch libs.versions.toml
+        run: sed -i 's/group = "io.ktor"/group = "com.github.pyamsoft.ktor"/g' gradle/libs.versions.toml
+
       - name: Make gradlew executable
         run: chmod +x gradlew
 
