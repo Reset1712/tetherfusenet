@@ -1,29 +1,23 @@
 [versions]
-# SDK
 minSdk = "24"
 targetSdk = "36"
 compileSdk = "36"
 
-# Android Gradle
 agp = "8.13.2"
 cacheFix = "3.0.3"
 
-# Kotlin
 kotlin = "2.3.0"
 coroutines = "1.10.2"
 
-# Us
 pydroid = "29.2.0"
 ktor = "3.3.3-PYAMSOFT"
 
-# Square
 leakCanary = "2.14"
 timber = "5.0.1"
 
 qrCode = "4.5.0"
 dagger = "2.57.2"
 
-# AndroidX
 core = "1.17.0"
 activity = "1.12.2"
 lifecycle = "2.10.0"
@@ -31,18 +25,14 @@ dataStore = "1.2.0"
 preference = "1.2.1"
 testRunner = "1.7.0"
 
-# Compose
 compose = "1.10.0"
 composeMaterial = "1.7.8"
 composeMaterial3 = "1.4.0"
 
-# Google
 ksp = "2.3.4"
 
-# Images
 coil = "3.3.0"
 
-# Developer Tools
 spotless = "8.1.0"
 doctor = "0.12.1"
 jdkDesugar = "2.1.5"
@@ -92,8 +82,8 @@ kotlin-test = { group = "org.jetbrains.kotlin", name = "kotlin-test", version.re
 kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
 kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines" }
 
-ktor-network = { group = "io.ktor", name = "ktor-network", version.ref = "ktor" }
-ktor-server-netty = { group = "io.ktor", name = "ktor-server-netty-jvm", version.ref = "ktor" }
+ktor-network = { group = "com.github.pyamsoft.ktor", name = "ktor-network", version.ref = "ktor" }
+ktor-server-netty = { group = "com.github.pyamsoft.ktor", name = "ktor-server-netty-jvm", version.ref = "ktor" }
 
 leakcanary = { group = "com.squareup.leakcanary", name = "leakcanary-android", version.ref = "leakCanary" }
 leakcanary-plumber = { group = "com.squareup.leakcanary", name = "plumber-android", version.ref = "leakCanary" }
